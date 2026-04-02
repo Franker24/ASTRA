@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.star-field {
+  background-image:
+    radial-gradient(1px 1px at 20px 30px, #e5e1e7, rgba(0, 0, 0, 0)),
+    radial-gradient(1.5px 1.5px at 40px 70px, #ebb2ff, rgba(0, 0, 0, 0)),
+    radial-gradient(1px 1px at 50px 160px, #00daf3, rgba(0, 0, 0, 0)),
+    radial-gradient(1px 1px at 80px 120px, #e5e1e7, rgba(0, 0, 0, 0)),
+    radial-gradient(1.5px 1.5px at 110px 210px, #e5e1e7, rgba(0, 0, 0, 0)),
+    radial-gradient(1px 1px at 150px 150px, #00daf3, rgba(0, 0, 0, 0));
+  background-repeat: repeat;
+  background-size: 300px 300px;
+  opacity: 0.2;
+}
+
+.nebula-glow {
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(29, 0, 43, 0.5) 0%,
+    rgba(19, 19, 23, 0) 70%
+  );
+}
+
+.sun-hero-gradient {
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(233, 196, 0, 0.15) 0%,
+    rgba(19, 19, 23, 0) 60%
+  );
+}
+
+.planet-glow {
+  filter: drop-shadow(0 0 40px rgba(0, 218, 243, 0.15));
+}
+
+.mask-vignette {
+  mask-image: radial-gradient(circle at center, black 40%, transparent 100%);
+}
+
+.cosmic-gradient {
+  background: radial-gradient(circle at 50% 50%, #1d002b 0%, #131317 100%);
+}
+
+.ion-glow {
+  background: linear-gradient(135deg, #00daf3 0%, #008898 100%);
+}
+
+.glass-effect {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.moon-glow {
+  box-shadow: 0 0 100px rgba(255, 225, 109, 0.1);
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  min-height: 100svh;
+}
